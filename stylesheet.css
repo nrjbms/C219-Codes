@@ -1,0 +1,293 @@
+nav {
+    overflow: hidden;
+    background-color: color(0, 0, 0, 0);
+    font-family: 'Lato', sans-serif;
+    text-shadow: 2px 2px 4px #0000004d;
+}
+
+nav svg {
+    justify-content: left;
+    margin-left: 15px;
+}
+
+nav a {
+    float: right;
+    display: block;
+    color: white;
+    text-align: right;
+    padding: 14px 20px;
+    text-decoration: none;
+    align-items: center;
+}
+
+nav a:hover {
+    background-color: rgb(0, 0, 0, 1);
+}
+
+body {
+    font-family: 'Lato';
+}
+
+.video-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: -1;
+}
+
+.fullscreen-video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+.container {
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    margin-top: 300px;
+    justify-content: center;
+}
+
+.header h1 {
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    font-family: 'Lexend Deca', sans-serif;
+    color: white;
+    font-size: 120px;
+    text-shadow: 2px 2px 4px #0000004d;
+}
+
+.card {
+    width: 300px;
+    height: 400px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    margin: 0 10px;
+    text-align: center;
+    padding: 20px;
+    background-size: cover;
+    transition: background-image 0.5s ease, transform 0.8s;
+    color: white;
+    position: relative;
+    overflow: hidden;
+    perspective: 1000px;
+}
+
+.card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+
+.card:hover .card-inner {
+    transform: rotateY(180deg);
+}
+
+.card-front,
+.card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-back {
+    transform: rotateY(180deg);
+}
+
+.card p {
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    text-align: center;
+}
+
+.card:hover p,
+.card:hover h2 {
+    opacity: 1;
+    filter: none;
+}
+
+.taj-mahal {
+    background-image: url(media/taj-mahal.jpg);
+}
+
+.colosseum {
+    background-image: url(media/colosseum.jpg);
+}
+
+.great-wall {
+    background-image: url(media/great-wall.jpg);
+}
+
+.taj-mahal:hover,
+.colosseum:hover,
+.great-wall:hover {
+    background-color: white;
+    color: black;
+    background-image: none;
+}
+
+.card h5 {
+    font-weight: bold;
+    font-family: 'Lato', sans-serif;
+}
+
+.card h5:hover {
+    text-decoration: underline;
+    font-weight: bolder;
+}
+
+
+.container {
+    text-align: center;
+}
+
+.plans {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.plan {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
+    margin: 0 10px;
+    background-color: white;
+    transition: all 0.2s;
+}
+
+.plan h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.price {
+    font-size: 18px;
+    color: #333;
+    margin: 10px 0;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    margin: 5px 0;
+}
+
+button {
+    background-color: #052e96;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-top: 20px;
+}
+
+button:hover {
+    background-color: #052e96;
+}
+
+button:focus {
+    outline: none;
+}
+
+.container2 h1 {
+    text-align: center;
+    color: white;
+    font-family: 'Lexend Deca', sans-serif;
+    text-shadow: 2px 2px 4px #0000004d;
+
+}
+
+.plan:hover {
+    transform: scale(1.1);
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+}
+
+.container3 {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.container3 h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-family: 'Lexend Deca', sans-serif;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Lato', sans-serif;
+}
+
+label {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    font-family: 'Inter', sans-serif;
+}
+
+input[type="submit"] {
+    background-color: darkblue;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+}
+
+input[type="submit"]:hover {
+    background-color: darkslateblue
+}
+
+.footer {
+    background-color: rgb(0, 0, 0, 0);
+    font-family: 'Lato', sans-serif;
+    padding: 20px;
+    text-align: center;
+    color: #ffffff;
+  }
+  
+  .footer i {
+    margin: 0 10px;
+    font-size: 24px;
+    color: #ffffff;
+  }
+
+
+
+
