@@ -5,6 +5,12 @@ nav {
     text-shadow: 2px 2px 4px #0000004d;
 }
 
+.dropdown {
+    display: none;
+}
+
+
+
 nav svg {
     justify-content: left;
     margin-left: 15px;
@@ -18,6 +24,12 @@ nav a {
     padding: 14px 20px;
     text-decoration: none;
     align-items: center;
+    justify-content: right;
+}
+
+nav i {
+    float: right;
+    font-size: 30px;
 }
 
 nav a:hover {
@@ -26,6 +38,7 @@ nav a:hover {
 
 body {
     font-family: 'Lato';
+    background-image: none;
 }
 
 .video-container {
@@ -53,13 +66,21 @@ body {
     justify-content: center;
 }
 
+.card-container {
+    display: flex;
+    align-items: center;
+    margin-top: 300px;
+    justify-content: center;
+    text-align: center;
+}
+
 .header h1 {
     text-align: center;
     margin-top: 100px;
     margin-bottom: 100px;
     font-family: 'Lexend Deca', sans-serif;
     color: white;
-    font-size: 120px;
+    font-size: 70px;
     text-shadow: 2px 2px 4px #0000004d;
 }
 
@@ -153,6 +174,8 @@ body {
     text-align: center;
 }
 
+
+
 .plans {
     display: flex;
     justify-content: center;
@@ -165,7 +188,10 @@ body {
     border-radius: 5px;
     padding: 20px;
     margin: 0 10px;
+    width: 300px;
+    height: 300px;
     background-color: white;
+    margin-top: 10px;
     transition: all 0.2s;
 }
 
@@ -225,7 +251,7 @@ body {
 }
 
 .container3 {
-    max-width: 500px;
+    max-width: 400px;
     margin: 0 auto;
     padding: 20px;
     background-color: #ffffff;
@@ -233,6 +259,7 @@ body {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     margin-top: 100px;
     margin-bottom: 100px;
+
 }
 
 .container3 h2 {
@@ -280,14 +307,67 @@ input[type="submit"]:hover {
     padding: 20px;
     text-align: center;
     color: #ffffff;
-  }
-  
-  .footer i {
+}
+
+.footer i {
     margin: 0 10px;
     font-size: 24px;
     color: #ffffff;
-  }
+}
+
+.dropbtn,
+.dropdown {
+    display: none;
+}
+
+.mobile-nav{
+    display: none;
+}
+
+@media only screen and (max-width: 768px) {
+
+    .web-nav{
+        display: none;
+    }
+
+    .mobile-nav{
+        display: contents;
+    }
+
+    .plans{
+        flex-direction: column;
+    }
 
 
+    .card-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .container2 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 
 
+    .card {
+        margin-top: 10px;
+    }
+
+
+    .video-container {
+        display: none;
+    }
+
+    body {
+        background-image: url(media/blue.jpg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        width: 100%;
+    }
+
+
+}
